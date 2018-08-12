@@ -46,3 +46,4 @@ route("user.show",[$user])
 route("user.edit",[$user])
 route("user.update",[$user]);
  **/
+Route::resource('topics', 'TopicsController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
