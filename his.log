@@ -1,0 +1,1000 @@
+   73  ll
+   74  cd ..
+   75  ls
+   76  ll
+   77  cd app/
+   78  ls
+   79  ll
+   80  cd Admin
+   81  ls
+   82  cd Controllers/
+   83  ls
+   84  ll
+   85  cat RoleController.php 
+   86  pwd
+   87  cd ..
+   88  ls
+   89  cd ..
+   90  ls
+   91  cd Http
+   92  ls
+   93  cd ..
+   94  ls
+   95  ll
+   96  cat AdminRole.php 
+   97  ls
+   98  cat AdminPermission.php 
+   99  cd ..
+  100  ls
+  101  cd app
+  102  ls
+  103  ll
+  104  cd Providers/
+  105  ls
+  106  ll
+  107  cat AuthServiceProvider.php 
+  108  ls
+  109  cd ..
+  110  ls
+  111  cd ..
+  112  ls
+  113  cd routes
+  114  ls
+  115  ll
+  116  cat web.php 
+  117  ls
+  118  cat admin.php 
+  119  pwd
+  120  ll
+  121  cat admin.php 
+  122  ls
+  123  cat web.php 
+  124  ls
+  125  ll
+  126  cd ..
+  127  ls
+  128  ll
+  129  cd app
+  130  ls
+  131  ll
+  132  cd Providers/
+  133  ls
+  134  ll
+  135  cat AuthServiceProvider.php 
+  136  ls
+  137  ll
+  138  cd ..
+  139  ls
+  140  cd ..
+  141  ls
+  142  cd routes/
+  143  ls
+  144  ll
+  145  cat admin.php 
+  146  ls
+  147  ll
+  148  ls
+  149  ll
+  150  cat web.php 
+  151  ls
+  152  cd /
+  153  ls
+  154  ll
+  155  cd home
+  156  ls
+  157  cd itkucode
+  158  ls
+  159  cd ls
+  160  ls
+  161  cd blog
+  162  ls
+  163  ll
+  164  cat /routes/admin.php
+  165  ls
+  166  ll
+  167  ll routes
+  168  cat routes/admin.php 
+  169  php artisan serve --host 0.0.0.0 --port 2346
+  170  ls
+  171  ll
+  172  python
+  173  pstree -ap|grep php
+  174  ls
+  175  cd /
+  176  cd home/itkucode/ls
+  177  ls
+  178  ll
+  179  cd blog
+  180  ls
+  181  ll
+  182  php artisan serve --host 0.0.0.0 --port 2346
+  183  ls
+  184  cd /home/itkucode/sw/tcp
+  185  ls
+  186  ll
+  187  cd HttpController/
+  188  ls
+  189  ll
+  190  cd Home
+  191  ls
+  192  cd ..
+  193  ls
+  194  cat User.php 
+  195  pwd
+  196  cd ..
+  197  ls
+  198  ll
+  199  php httpserver.php 
+  200  cd /home/itkucode/ls/blog
+  201  ls
+  202  php artisan serve --host 0.0.0.0 --port
+  203  php artisan serve --host 0.0.0.0 --port 2346
+  204  ls
+  205  cd routes/
+  206  ls
+  207  vi web.php 
+  208  cd ..
+  209  ls
+  210  php artisan serve --host 0.0.0.0 --port 2346
+  211  cd ..
+  212  cd blog
+  213  ls
+  214  cd ls
+  215  cd blog
+  216  ls
+  217  vi routes/web.php 
+  218  php artisan serve --host 0.0.0.0 --port 2346
+  219  vi routes/web.php 
+  220  php artisan serve --host 0.0.0.0 --port 2346
+  221  ls
+  222  curl -I http://127.0.0.1:2346/home
+  223  curl -I http://127.0.0.1:2346/posts
+  224  ab -c 1000 -n 1000 http://127.0.0.1:2346/posts
+  225  ab -c 100 -n 100 http://127.0.0.1:2346/posts
+  226  curl -I http://127.0.0.1:2346/user/index
+  227  netstat -an |grep php
+  228  netstat -luntp |grep php
+  229  curl -I http://127.0.0.1:2348/user/index
+  230  ab -c 100 -n 100 http://127.0.0.1:2348/user/index
+  231  cd /home/itkucode/ls
+  232  cd blog
+  233  ls
+  234  ll
+  235  cd app
+  236  ls
+  237  ll
+  238  cd Http
+  239  ls
+  240  ll
+  241  cd Controllers/
+  242  ls
+  243  ll
+  244  vi PostsController.php 
+  245  ab -c 100 -n 100 http://127.0.0.1:2348/user/index
+  246  ab -c 10000 -n 10000 http://127.0.0.1:2348/user/index
+  247  ab -c 10000 -n 10000 http://127.0.0.1:2346/posts/nouse
+  248  ab -c 100 -n 100 http://127.0.0.1:2346/posts/nouse
+  249  curl -I http://127.0.0.1:2346/posts/nouse
+  250  ab -c 100 -n 100 http://127.0.0.1:2346/posts/nouse
+  251  ab -c 10000 -n 10000 http://127.0.0.1:2346/posts/nouse
+  252  ls
+  253  cd /home/itkucode/sw/tcp
+  254  ls
+  255  ll
+  256  pstree -ap|grep php
+  257  ls
+  258  ll
+  259  php server_tcp.php 
+  260  ll
+  261  pstree -ap |grep php
+  262  telent 
+  263  telnet
+  264  ls
+  265  cd /
+  266  ll
+  267  pstree -ap |grep php
+  268  ll
+  269  cd /home/itkucode/sw/tcp
+  270  ls
+  271  cd tcp
+  272  ls
+  273  ll
+  274  php corutine_tcp_client.php 
+  275  ls
+  276  ll
+  277  php corutine_tcp_client.php 
+  278  pwd
+  279  php corutine_tcp_client.php 
+  280  ls
+  281  who
+  282  w
+  283  cd /home/itkucode
+  284  ls
+  285  cd sw
+  286  ls
+  287  ll
+  288  cd tcp
+  289  ls
+  290  ll
+  291  cd tcp
+  292  ls
+  293  ll
+  294  pstree -ap |grep php
+  295  kill 6729
+  296  pstree -ap |grep php
+  297  ls
+  298  ll
+  299  php server_tcp.php 
+  300  ls
+  301  ll
+  302  cd /etc/nginx
+  303  ls
+  304  cd conf.d/
+  305  ls
+  306  ll
+  307  cat itkucode.conf 
+  308  ls
+  309  pstree -ap|grep php
+  310  ls /home/itkucode/sw/tcp/tcp
+  311  ls
+  312  cat /home/itkucode/sw/tcp/tcp/baidu.html
+  313  pstree -ap |grep php
+  314  mysql -uroot -p
+  315  ls
+  316  nginx -v
+  317  nginx -V
+  318  ls
+  319  cd /
+  320  ll
+  321  cd /home/itkucode/sw/tcp
+  322  ls
+  323  cd tcp
+  324  ls
+  325  ll
+  326  pstree -ap|grep php
+  327  kill 31935
+  328  pstree -ap|grep php
+  329  ll
+  330  php corutine_tcp_client.php 
+  331  ll
+  332  php coroutine_server_tcp.php 
+  333  ls
+  334  ll
+  335  cd /mnt/bolall
+  336  ll
+  337  ls
+  338  ll
+  339  ls
+  340  ll
+  341  ls
+  342  cd /
+  343  telnet
+  344  ls
+  345  pwd
+  346  cd www
+  347  ls
+  348  cd /
+  349  ls
+  350  cd home
+  351  ls
+  352  cd itkucode
+  353  ls
+  354  cd ls
+  355  ls
+  356  ll
+  357  cd jackcsm/
+  358  ls
+  359  pwd
+  360  ls
+  361  cd vendor/
+  362  ls
+  363  cd tymon/
+  364  ls
+  365  cd jwt-auth/
+  366  ls
+  367  cd src
+  368  ls
+  369  ll
+  370  ls
+  371  ll
+  372  cd /home/itkucode/ls
+  373  ls
+  374  cd jackcsm/
+  375  ls
+  376  ll
+  377  pwd
+  378  ls
+  379  ll
+  380  php artisan serve --host 0.0.0.0 --port 2346
+  381  ls
+  382  cd /
+  383  pstree -ap |grep php
+  384  cd /home/itkucode/sw/tcp/tcp
+  385  ls
+  386  ll
+  387  cat baidu.log
+  388  pstree -ap |grep php
+  389  curl -I http://127.0.0.1:2346
+  390  pstree -ap |grep php
+  391  pstree -ap|grep php
+  392  netstat -luntp |grep php
+  393  telnet
+  394  netstat -luntp |grep php
+  395  telnet
+  396  pstree -ap |grep php
+  397  netstat -luntp |grep php
+  398  telnet
+  399  netstat -luntp |grep php
+  400  telnet
+  401  netstat -luntp |grep php
+  402  telnet
+  403  netstat -luntp |grep php
+  404  ls
+  405  ll
+  406  php coroutine_tcp_client.php 
+  407  ls
+  408  ll
+  409  ls
+  410  cd /home/itkucode/ls
+  411  ll
+  412  cd jackcsm/
+  413  ls
+  414  ll
+  415  ls
+  416  ll
+  417  composer require dingo/api:2.0.x@dev
+  418  ls
+  419  ll
+  420  cd vendor/
+  421  ls
+  422  cd ..
+  423  ls
+  424  ll
+  425  php artisan vendor:publish --provider="Dingo\Api\Provider\DingoServiceProvider"
+  426  composer update
+  427  cd vendor/
+  428  ls
+  429  ll
+  430  ls
+  431  pwd
+  432  cd ..
+  433  ls
+  434  cd vendor/
+  435  ls
+  436  ll
+  437  cd dingo
+  438  ls
+  439  cd ..
+  440  ls
+  441  ll
+  442  cd ..
+  443  ls
+  444  composer update
+  445  composer autodump
+  446  composer auto-dump
+  447  composer dump-autoload
+  448  ls
+  449  cd vendor/
+  450  ls
+  451  cd dingo/
+  452  ls
+  453  cd api
+  454  ls
+  455  history
+  456  ls
+  457  cd ..
+  458  ls
+  459  cd ..
+  460  ls
+  461  cd ..
+  462  ls
+  463  vi composer.json
+  464  composer update
+  465  vi composer.json
+  466  composer update
+  467  php artisan vendor:publish --provider="Dingo\Api\Provider\LaravelServiceProvider"
+  468  ls
+  469  ll
+  470  cd vendor/
+  471  ls
+  472  cd dingo/
+  473  ls
+  474  cd ..
+  475  ls
+  476  cd ..
+  477  vi composer.json
+  478  composer update
+  479  ls
+  480  ll
+  481  cd vendor/
+  482  ls
+  483  cd ..
+  484  ls
+  485  ll
+  486  php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\JWTAuthServiceProvider"
+  487  php artisan vendor:publish --provider="Tymon\JWTAuth\Providers\LaravelServiceProvider"
+  488  php artisan 
+  489  php artisan help jwt:secret
+  490  php artisan 
+  491  php artisan jwt:secret
+  492  ls
+  493  ll
+  494  php artisan make:controller App\Http\Controllers\Api\Auth\LoginController
+  495  php artisan make:controller App\Http\Controllers\Api\Auth\RegisterController
+  496  ls
+  497  php artisan make:controller App\Http\Controllers\Api\Auth\RegisterController
+  498  App\\Http\\Controllers\\Api\\Auth\\RegisterController
+  499  php artisan make:controller App\\Http\\Controllers\\Api\\Auth\\RegisterController
+  500   
+  501  ls
+  502  php artisan make:controller App\\Http\\Controllers\\Api\\Auth\\LoginController
+  503  php artisan 
+  504  php artisan help make:model
+  505  php artisan make:model Member -m
+  506  php artisan migrate
+  507  ls
+  508  ll
+  509  ls
+  510  pwd
+  511  ls
+  512  php artisan serve --host 0.0.0.0 --port 2346
+  513  ls
+  514  ll
+  515  df -h
+  516  ls
+  517  ll
+  518  php artisan serve --host 0.0.0.0 --port 2346
+  519  PWD
+  520  pwd
+  521  cd /etc/nginx/conf.d/
+  522  ls
+  523  vi itkucode.conf 
+  524  nginx -tc /etc/nginx/nginx.conf
+  525  nginx -s reload -c /etc/nginx/nginx.conf
+  526  vi itkucode.conf 
+  527  nginx -s reload -c /etc/nginx/nginx.conf
+  528  vi itkucode.conf 
+  529  ls
+  530  cd /home/itkucode/ls
+  531  ls
+  532  ll
+  533  cd jackcsm/
+  534  ls
+  535  ll
+  536  ls /app
+  537  ls app/
+  538  ls app/Http
+  539  ls app/Http/Controllers
+  540  vi app/Http/Controllers/TestController.php
+  541  php artisan serve --host 0.0.0.0 --port 2346
+  542  ls routes/
+  543  cat routes/web.php 
+  544  vi routes/web.php 
+  545  vi app/Http/Controllers/TestController.php
+  546  php artisan serve --host 0.0.0.0 --port 2346
+  547  vi app/Http/Controllers/TestController.php
+  548  php artisan serve --host 0.0.0.0 --port 2346
+  549  ls
+  550  ll
+  551  cd /home/itkucode/sw/tcp
+  552  ls
+  553  ll
+  554  cd http
+  555  ls
+  556  cd ..
+  557  ls
+  558  cd httpCon
+  559  cd HttpController/
+  560  ls
+  561  cd ..
+  562  ls
+  563  ll
+  564  cd ..
+  565  ls
+  566  ll
+  567  cd tcp
+  568  s
+  569  ls
+  570  ll
+  571  pwd
+  572  ls
+  573  php httpserver.php 
+  574  composer -v
+  575  composer -V
+  576  ls
+  577  cd /
+  578  cd /home/itkucode/ls
+  579  ls
+  580  cd jackcsm/
+  581  ls
+  582  ll
+  583  php artisan serve --host 0.0.0.0 --port 2346
+  584  ls
+  585  ll
+  586  cd /home
+  587  ls
+  588  cd itkucode
+  589  ls
+  590  ll
+  591  ls
+  592  cd ls
+  593  ll
+  594  cd jackcsm/
+  595  ls
+  596  ll
+  597  composer update
+  598  php artisan vendor:publish
+  599  ls
+  600  php artisan make:controller Api/Controller
+  601  php artisan make:controller erificationCodesController
+  602  php artisan make:controller Api/erificationCodesController
+  603  php artisan make:request Api/verificationCodesRequest
+  604  df -h
+  605  ls
+  606  cd ..
+  607  ls
+  608  ll
+  609  composer create-project laravel/larael Larael --prefer-dist "5.5.*"
+  610  composer create-project laravel/laravel Larael --prefer-dist "5.5.*"
+  611  ls
+  612  ls
+  613  cd /
+  614  ll
+  615  cd /home/itkucode/ls
+  616  ls
+  617  cd Larael/
+  618  ls
+  619  ll
+  620  git config --global user.name "oldshiji"
+  621  git config --global user.email "1655664358@qq.com"
+  622  git config --global push.default simple
+  623  git init
+  624  git add -A
+  625  git status
+  626  git commit -m 'Initial commit'
+  627  git log
+  628  ls
+  629  ll
+  630  vi test.log
+  631  git add -A
+  632  git status
+  633  git commit -m 'add test.log'
+  634  git status
+  635  git log
+  636  ls
+  637  ll
+  638  rm -f test.log
+  639  ll
+  640  git checkout -f
+  641  ll
+  642  git remote add origin https://github.com/oldshiji/semiconductor.git
+  643  git push -u origin master
+  644  ls
+  645  git log
+  646  ls
+  647  cat readme.md 
+  648  ls
+  649  ll
+  650  vi readme.md 
+  651  rm -f readme.md 
+  652  vi readme.md
+  653  git status
+  654  git add -A
+  655  git commit -m 'update readme.md file'
+  656  git push -u origin master
+  657  git log
+  658  git checkout master
+  659  git checkout -b static-pages
+  660  ls
+  661  ll
+  662  rm resources/views/welcome.blade.php 
+  663  php artisan make:controller StaticPagesController
+  664  php artisan list
+  665  git checkout master
+  666  git checkout static-pages
+  667  git add -A
+  668  git commit -m 'finish static pages'
+  669  git checkout master
+  670  git merge static-pages
+  671  git push
+  672  git checkout master
+  673  git checkout -b filling-layout-style
+  674  yarn
+  675  yum install yarn
+  676  curl --silent --location https://dl.yarnpkg.com/rpm/yarn.repo | sudo tee /etc/yum.repos.d/yarn.repo
+  677  curl --silent --location https://rpm.nodesource.com/setup_6.x | bash -
+  678  yum install yarn
+  679  yarn install --no-bin-links
+  680  yarn --version
+  681  yarn install --no-bin-links
+  682  ls
+  683  php artisan make:controller UsersController
+  684  git status
+  685  git add -A
+  686  git commit -m 'finish fillint and route'
+  687  git checkout master
+  688  git status
+  689  git merge filling-layout-style
+  690  git push
+  691  git status
+  692  git log
+  693  git checkout master
+  694  git checkout -b modeling-users
+  695  php artisan migrate
+  696  php artisan migrate:rollback
+  697  php artisan migrate
+  698  history
+  699  ls
+  700  cd /home/itkucode/ls/
+  701  ls
+  702  cd Laravel
+  703  ls
+  704  cd larael
+  705  cd Larael/
+  706  ls
+  707  ll
+  708  php artisan serve --host 0.0.0.0 --port 2346
+  709  pstree -ap |grep php
+  710  kill 32117
+  711  php artisan serve --host 0.0.0.0 --port 2346
+  712  cd /home
+  713  df -h
+  714  ls
+  715  cd itkucode
+  716  ls
+  717  ll
+  718  mkdir composer-test
+  719  ls
+  720  cd composer-test/
+  721  ls
+  722  composer require phpoffice/phpexcel
+  723  ls
+  724  pwd
+  725  ls
+  726  cd ..
+  727  ls
+  728  ll
+  729  chmod -R 777 composer-test/
+  730  ls
+  731  cd composer-test/
+  732  ls
+  733  composer dump-autoload
+  734  df -h
+  735  ls
+  736  cd /home/itkucode/ls
+  737  ls
+  738  cd Larael/
+  739  ls
+  740  ll
+  741  php artisan serve --host 0.0.0.0 --port 2346
+  742  cd /home
+  743  ls
+  744  ll
+  745  cd itkucode
+  746  ls
+  747  cd ls
+  748  ll
+  749  cd Larael/
+  750  ls
+  751  ll
+  752  git log
+  753  git status
+  754  history
+  755  git checkout master
+  756  git checkout modeling-users
+  757  git status
+  758  git add -A
+  759  git commit -m 'update user model namespace'
+  760  git checkout master
+  761  git merge modeling-users
+  762  git push
+  763  git log
+  764  php artisan make:model Models/Article -m
+  765  php artisan tinker
+  766  ls
+  767  ll
+  768  ls app
+  769  ls app/Models
+  770  cat app/Models/User.php
+  771  ls
+  772  ls app
+  773  cat app/User.php
+  774  php artisan tinker
+  775  git checkout master
+  776  git checkout -b signup
+  777  php artisan tinker
+  778  php artisan migrate:refresh
+  779  df -h
+  780  ls
+  781  cd /home/itkucode/ls
+  782  ls
+  783  cd Larael/
+  784  ls
+  785  ll
+  786  rm -rf node_modules/
+  787  ls
+  788  df -h
+  789  cd /home/itkucode/ls
+  790  ls
+  791  cd Larael/
+  792  ls
+  793  ll
+  794  php artisan serve --host 0.0.0.0 --port 2346
+  795  history
+  796  git status
+  797  cd /home/itkucode/ls
+  798  cd Larael/
+  799  ls
+  800  ll
+  801  git status
+  802  git add -A
+  803  git commit -m 'finish signup'
+  804  git checkout master
+  805  git merge signup
+  806  git push
+  807  git log
+  808  git checkout master
+  809  git checkout -b login-logout
+  810  php artisan make:controller SessionController
+  811  php artisan route:list
+  812  cd /home/itkucode/ls
+  813  ls
+  814  cd Larael/
+  815  ls
+  816  ll
+  817  git status
+  818  git add -A
+  819  git commit -m 'finish login-logout'
+  820  git checkout master
+  821  git merge login-logout
+  822  git push
+  823  git checkout master
+  824  git checkout -b user-crud
+  825  php artisan 
+  826  php artisan make:policy UserPolicy
+  827  ls
+  828  cd app
+  829  ls
+  830  cd ..
+  831  ls
+  832  ll
+  833  php artisan tinker
+  834  cd /home/itkucode/ls
+  835  cd Larael/
+  836  ls
+  837  ll
+  838  php artisan serve --host 0.0.0.0 --port 2346
+  839  cd /home/itkucode/ls
+  840  cd Larael/
+  841  ls
+  842  ll
+  843  ls
+  844  ll
+  845  cd /home/itkucode/sw
+  846  ls
+  847  cd tcp
+  848  ls
+  849  ll
+  850  pstree -ap |grep php
+  851  php httpserver.php 
+  852  ls
+  853  cd /home/itkucode/ls/Larael/
+  854  ls
+  855  ll
+  856  cd app
+  857  ls
+  858  pwd
+  859  cd ..
+  860  ls
+  861  cd ..
+  862  ls
+  863  cd ..
+  864  ls
+  865  cd ..
+  866  ls
+  867  cd itkucode
+  868  ls
+  869  cd ls
+  870  ls
+  871  cd Larael/
+  872  ls
+  873  ll
+  874  ls
+  875  ll
+  876  php artisan 
+  877  php artisan make:seeder UsersTableSeeder
+  878  php artisan migrate:refresh --seed
+  879  php artisan make:migration add_is_admin_to_users_table --table=users
+  880  php artisan migrate
+  881  php artisan migrate:refresh -seed
+  882  php artisan migrate:refresh --seed
+  883  php artisan tinker
+  884  ab -c 100 -n 100 http://127.0.0.1:2346/users/index
+  885  git log
+  886  git status
+  887  git add -A
+  888  git commit -m 'finish user crud'
+  889  git checkout master
+  890  git merge user-crud
+  891  git push
+  892  git checkout master
+  893  git checkout -b account-activation-password-resets
+  894  php artisan make:migration add_activatiion_to_users_table --table=users
+  895  php artisan migrate
+  896  php artisan migrate:refresh --seed
+  897  ls
+  898  cd storage/
+  899  ls
+  900  cd logs
+  901  ls
+  902  cat laravel.log 
+  903  ls
+  904  clear
+  905  cd ..
+  906  ls
+  907  cd ..
+  908  ls
+  909  ll
+  910  php artisan migrate:refresh --seed
+  911  git checkout master
+  912  history
+  913  git checkout account-activation-password-resets
+  914  git add -A
+  915  git commit -m 'finish activeation'
+  916  git checkout master
+  917  git merge account-activation-password-resets
+  918  git push
+  919  git checkout master
+  920  git checkout -b user-statuses
+  921  php artisan make:migration create_statuses_table --create="statuses"
+  922  php artisan help make:migration
+  923  php artisan migrate
+  924  php artisan make:model Models/Status
+  925  php artisan tinker
+  926  pstree -ap |grep php
+  927  curl -I http://127.0.0.1:2347/user/test
+  928  ab -c 10000 -n 1000000 http://127.0.0.1:2347/user/test
+  929  ab -c 200 -n 10000000 http://127.0.0.1:2347/user/test
+  930  ab -c 200 -n 1000000 http://127.0.0.1:2347/user/test
+  931  ls
+  932  ll
+  933  php artisan tinker
+  934  php artisan make:factory StatusFactory
+  935  php artisan make:seeder StatusesTableSeeder
+  936  php artisan migrate:refresh --seed
+  937  php artisan make:controller StatusesController
+  938  php artisan make:policy StatusPolicy
+  939  git add -A
+  940  git commit -m 'add user statuses'
+  941  git checkout master
+  942  git merge user-statuses
+  943  git push
+  944  php artisan make:migration create_followers_table --create="followers"
+  945  php artisan migrate
+  946  php artisan tinker
+  947  df -h
+  948  ls
+  949  ll
+  950  cd ..
+  951  ls
+  952  rm -rf jackcsm
+  953  df -h
+  954  ll
+  955  composer config -g repo.packagist composer https://packagist.laravel-china.org
+  956  composer create-project laravel/laravel larabbs --prefer-dist "5.5.*"
+  957  ls
+  958  ll
+  959  df -h
+  960  ls
+  961  cd larabbs/
+  962  ls
+  963  ll
+  964  git init
+  965  git add -A
+  966  git commit -m '初始化一个laravel本地库'
+  967  git remote add origin git@github.com:oldshiji/larabbs.git
+  968  git push -u origin master
+  969  git remote add origin git@github.com:oldshiji/circuit
+  970  git remote add origin https://github.com/oldshiji/circuit.git
+  971  git push -u origin master
+  972  git log
+  973  git push -u origin master
+  974  vi /etc/hosts
+  975  git log
+  976  git push -u origin master
+  977  git remote add origin https://github.com/oldshiji/circuit.git
+  978  git push -u origin master
+  979  ls
+  980  cd /home/itkucode/ls
+  981  ls
+  982  cd Larael/
+  983  ls
+  984  ll
+  985  php artisan serve --host 0.0.0.0 --port 2346
+  986  ls
+  987  ll
+  988  cd ..
+  989  ls
+  990  df -h
+  991  ls
+  992  cd larabbs
+  993  ls
+  994  ll
+  995  php artisan serve --host 0.0.0.0 --port 2346
+  996  ls
+  997  pstree -ap|grep php
+  998  cd /home/itkucode/sw/tcp
+  999  ls
+ 1000  php httpserver.php 
+ 1001  cd /
+ 1002  cd home/itkucode/ls
+ 1003  ls
+ 1004  cd larabbs/
+ 1005  ls
+ 1006  ll
+ 1007  git push
+ 1008  git checkout master
+ 1009  git checkout -b auth
+ 1010  php artisan make:auth
+ 1011  git status
+ 1012  php artisan migrate
+ 1013  git add -A
+ 1014  git commit -m 'finish user auth'
+ 1015  composer require "mews/captcha:~2.0"
+ 1016  ls
+ 1017  ll
+ 1018  composer require "mews/captcha:~2.0"
+ 1019  composer config -g repo.packagist composer https://packagist.phpcomposer.com
+ 1020  composer require "mews/captcha:~2.0"
+ 1021  php --ini
+ 1022  php -m
+ 1023  cd /home/
+ 1024  ls
+ 1025  cd soft
+ 1026  ls
+ 1027  cd php
+ 1028  ls
+ 1029  cd ..
+ 1030  ls
+ 1031  cd php-7.2.6
+ 1032  ls
+ 1033  cd src
+ 1034  ls
+ 1035  cd ext
+ 1036  ls
+ 1037  cd fileinfo
+ 1038  ls
+ 1039  ll
+ 1040  ls /home
+ 1041  ls /home/soft
+ 1042  ls /home/soft/php
+ 1043  ls /home/soft/php/bin
+ 1044  ./home/soft/php/bin/phpize
+ 1045  ll /home/soft/php/bin
+ 1046  ./home/soft/php/bin/phpize
+ 1047  ll
+ 1048  /home/soft/php/bin/phpize
+ 1049  ls
+ 1050  ll
+ 1051  ./configure --help
+ 1052  ./configure --with-php-config=/home/soft/php/bin/php-config
+ 1053  make
+ 1054  make install
+ 1055  ./configure --with-php-config=/home/soft/php/bin/php-config
+ 1056  make && make install
+ 1057  ls
+ 1058  php --ini
+ 1059  vi /home/soft/php/lib/php.ini
+ 1060  php -m
+ 1061  cd /home/itkucode/ls
+ 1062  cd larabbs/
+ 1063  ls
+ 1064  ll
+ 1065  composer require "mews/captcha:~2.0"
+ 1066  php artisan vendor:publish --provider='Mews\Captcha\CaptchaServiceProvider' 
+ 1067  php -m
+ 1068  php --i fileinfo
+ 1069  pstree -ap |grep php
+ 1070  php-fpm reload
+ 1071  systemctl php-fpm reload
+ 1072  history >'his.log'
