@@ -18,6 +18,14 @@ class TopicsController extends Controller
 	{
 		$topics = Topic::paginate();
 		return view('topics.index', compact('topics'));
+
+//        $faker = \Faker\Factory::create('zh_CN');
+//        for ($i=0; $i < 10; $i++) {
+//            //echo $faker->shuffle("我们都有一个家，名字叫中国，兄弟姐妹都很多"), "<br />";
+//            //print_r($faker->sentences())."<br />";
+//            echo $faker->valid()->address."<br />";
+//        }
+
 	}
 
     public function show(Topic $topic)
