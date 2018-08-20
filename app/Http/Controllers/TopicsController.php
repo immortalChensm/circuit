@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Handlers\ImageUploadHandler;
 use App\Models\Category;
 use App\Models\Topic;
 use Illuminate\Http\Request;
@@ -12,7 +13,7 @@ class TopicsController extends Controller
 {
     public function __construct()
     {
-        $this->middleware('auth', ['except' => ['index', 'show']]);
+        $this->middleware('auth', ['except' => ['index', 'show','upload_image']]);
     }
 
 	public function index(Request $request,Topic $topic)
@@ -30,6 +31,26 @@ class TopicsController extends Controller
 
 	}
 
+	public function upload_image(Request $request,ImageUploadHandler $upload)
+    {
+        $data = [
+            'success'   => false,
+            'msg'       => '上传失败!',
+            'file_path' => ''
+        ];
+
+        if($request->upload_file){
+
+            $result = $upload->save($request->upload_file,'topics',\Auth::id());
+            if($result){
+                $data['success'] = true;
+                $data['msg'] = 'upload success';
+                $data['file_path'] = $result['path'];
+            }
+        }
+
+        return $data;
+    }
     public function show(Topic $topic)
     {
         return view('topics.show', compact('topic'));
@@ -53,7 +74,8 @@ class TopicsController extends Controller
 	public function edit(Topic $topic)
 	{
         $this->authorize('update', $topic);
-		return view('topics.create_and_edit', compact('topic'));
+        $categories = Category::all();
+		return view('topics.create_and_edit', compact('topic','categories'));
 	}
 
 	public function update(TopicRequest $request, Topic $topic)
