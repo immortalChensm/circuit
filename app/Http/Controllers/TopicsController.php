@@ -14,15 +14,15 @@ class TopicsController extends Controller
         $this->middleware('auth', ['except' => ['index', 'show']]);
     }
 
-	public function index()
+	public function index(Request $request,Topic $topic)
 	{
 	    //预加载
-		$topics = Topic::with('user','category')->paginate(30);
+		$topics = $topic->withOrder($request->order)->paginate(30);
 		return view('topics.index', compact('topics'));
 
 //        $faker = \Faker\Factory::create('zh_CN');
 //        for ($i=0; $i < 10; $i++) {
-//            //echo $faker->shuffle("我们都有一个家，名字叫中国，兄弟姐妹都很多"), "<br />";
+//
 //            //print_r($faker->sentences())."<br />";
 //            echo $faker->valid()->address."<br />";
 //        }

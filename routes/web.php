@@ -15,8 +15,11 @@
 //    return view('welcome');
 //});
 
-
+Route::get("/jack","App\Http\Controllers\JackController@index");
 Route::get("/","PagesController@root")->name("root");
+//Route::get("/test",function(){
+//    return 'hello';
+//});
 //Auth::routes();
 
 //Route::get('/home', 'HomeController@index')->name('home');
@@ -49,3 +52,4 @@ route("user.update",[$user]);
 Route::resource('topics', 'TopicsController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
 
 Route::resource("categories","CategoriesController",['only'=>['show']]);
+
