@@ -60,6 +60,7 @@ Route::post("/topics/store",function(){
 Route::get("/topics",function(){
 
 });
+
 Route::post("upload_image",'TopicsController@upload_image')->name("topics.upload_image");
 Route::get("topics/{topic}/{slug?}","TopicsController@show")->name("topics.show");
 //Route::resource('topics', 'TopicsController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
@@ -68,4 +69,5 @@ Route::resource('topics', 'TopicsController', ['only' => ['index', 'create', 'st
 Route::resource("categories","CategoriesController",['only'=>['show']]);
 
 
-Route::resource('replays', 'ReplaysController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
+//Route::resource('replays', 'ReplaysController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
+Route::resource('replays', 'ReplaysController', ['only' => ['store','destroy']]);

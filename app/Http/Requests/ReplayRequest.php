@@ -21,6 +21,7 @@ class ReplayRequest extends Request
             {
                 return [
                     // UPDATE ROLES
+                    "content"=>"required|min:2"
                 ];
             }
             case 'GET':

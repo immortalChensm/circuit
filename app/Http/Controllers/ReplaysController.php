@@ -30,10 +30,15 @@ class ReplaysController extends Controller
 		return view('replays.create_and_edit', compact('replay'));
 	}
 
-	public function store(ReplayRequest $request)
+	public function store(ReplayRequest $request,Replay $replay)
 	{
-		$replay = Replay::create($request->all());
-		return redirect()->route('replays.show', $replay->id)->with('message', 'Created successfully.');
+		//$replay = Replay::create($request->all());
+        $replay->content = $request->content;
+        $replay->user_id = \Auth::id();
+        $replay->topic_id = $request->topic_id;
+        $replay->save();
+        return redirect()->to($replay->topic->link())->with('success', '创建成功！');
+		//return redirect()->route('replays.show', $replay->id)->with('message', 'Created successfully.');
 	}
 
 	public function edit(Replay $replay)
