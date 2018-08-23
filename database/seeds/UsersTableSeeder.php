@@ -47,6 +47,12 @@ class UsersTableSeeder extends Seeder
         $user->name = 'jackcsm';
         $user->email = 'jackcsm@qq.com';
         $user->avatar = 'http://123.56.12.53:2346/uploads/images/avatar/201808/12/1_1534059955_74RL1oyVRo.png';
+
+        $user->assignRole("founder");
+
+        $user = User::find(2);
+        $user->assignRole('Maintainer');
+        
         $user->save();
 
     }
