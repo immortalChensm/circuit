@@ -18,6 +18,9 @@ class TopicsController extends Controller
 
 	public function index(Request $request,Topic $topic)
 	{
+	    //$http = new \GuzzleHttp\Client();
+	    //$ret = $http->get("http://www.baidu.com");
+	    //print_r($ret->getBody());
 	    //预加载
 		$topics = $topic->withOrder($request->order)->paginate(30);
 		return view('topics.index', compact('topics'));

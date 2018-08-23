@@ -15,7 +15,8 @@
 //    return view('welcome');
 //});
 
-Route::get("/jack","App\Http\Controllers\JackController@index");
+//Route::get("/jack","\App\Http\Controllers\JackController@index");
+Route::get("/jack","\App\Http\Controllers\JackController@index")->middleware("jack");
 Route::get("/","PagesController@root")->name("root");
 //Route::get("/test",function(){
 //    return 'hello';
@@ -52,7 +53,9 @@ route("user.update",[$user]);
 
 Route::post("upload_image",'TopicsController@upload_image')->name("topics.upload_image");
 
-Route::resource('topics', 'TopicsController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
+//Route::resource('topics', 'TopicsController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
+Route::resource('topics', 'TopicsController', ['only' => ['index', 'create', 'store', 'update', 'edit', 'destroy']]);
+Route::get("topics/{topic}/{slug?}","TopicsController@show")->name("topics.show");
 
 Route::resource("categories","CategoriesController",['only'=>['show']]);
 
