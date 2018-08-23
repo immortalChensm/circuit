@@ -2,6 +2,8 @@
 
 namespace App\Jobs;
 
+use App\Handlers\SlugTranslateHandler;
+use App\Models\Topic;
 use Illuminate\Bus\Queueable;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Queue\InteractsWithQueue;
@@ -12,14 +14,16 @@ class TranslateSlug implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
+    protected $topic;
     /**
      * Create a new job instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct(Topic $topic)
     {
         //
+        $this->topic = $topic;
     }
 
     /**
@@ -30,5 +34,8 @@ class TranslateSlug implements ShouldQueue
     public function handle()
     {
         //
+
+        $slug = app(SlugTranslateHandler::class)->translate($this->topic->title);
+        Db::table("topics")->where("id",$this->topic->id)->update(['slug'=>$slug]);
     }
 }

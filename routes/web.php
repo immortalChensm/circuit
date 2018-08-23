@@ -51,11 +51,21 @@ route("user.edit",[$user])
 route("user.update",[$user]);
  **/
 
-Route::post("upload_image",'TopicsController@upload_image')->name("topics.upload_image");
+Route::get("topics/create",function(){
 
+});
+Route::post("/topics/store",function(){
+
+});
+Route::get("/topics",function(){
+
+});
+Route::post("upload_image",'TopicsController@upload_image')->name("topics.upload_image");
+Route::get("topics/{topic}/{slug?}","TopicsController@show")->name("topics.show");
 //Route::resource('topics', 'TopicsController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
 Route::resource('topics', 'TopicsController', ['only' => ['index', 'create', 'store', 'update', 'edit', 'destroy']]);
-Route::get("topics/{topic}/{slug?}","TopicsController@show")->name("topics.show");
 
 Route::resource("categories","CategoriesController",['only'=>['show']]);
 
+
+Route::resource('replays', 'ReplaysController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
